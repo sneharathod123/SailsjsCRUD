@@ -20,7 +20,22 @@ module.exports.routes = {
 
   "/": { view: "pages/homepage" },
   // "/articles/list": "articles/list",
-  "POST /articles/list": { controller: "ArticlesController", action: "list" },
+  "POST /articles/Create": {
+    controller: "ArticlesController",
+    action: "create",
+  },
+  "GET /articles/Find": {
+    controller: "ArticlesController",
+    action: "find",
+  },
+  "PUT /articles/update/:id": {
+    controller: "ArticlesController",
+    action: "update",
+  },
+  "DELETE /articles/delete/:id": {
+    controller: "ArticlesController",
+    action: "delete",
+  },
 
   /***************************************************************************
    *                                                                          *
